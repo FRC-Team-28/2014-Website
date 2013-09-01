@@ -13,5 +13,12 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+    return "Hello World.";
 });
+
+// Adding auth checks for the upload functionality is highly recommended.
+
+// Cabinet routes
+Route::get('upload/data', 'UploadController@data');
+Route::resource( 'upload', 'UploadController', array(
+    'except' => array('show', 'edit', 'update', 'destroy')));
