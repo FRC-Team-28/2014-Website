@@ -5,7 +5,8 @@
 	"require": {
 		"laravel/framework": "4.0.*",
         "cartalyst/sentry": "dev-master",
-        "andrew13/cabinet": "dev-master"
+        "andrew13/cabinet": "dev-master",
+        "escapework/laravelhelpers": "0.5.*"
 	},
     "require-dev": {
         "barryvdh/laravel-ide-helper": "dev-master",
