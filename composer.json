@@ -6,11 +6,12 @@
 		"laravel/framework": "4.0.*",
         "cartalyst/sentry": "dev-master",
         "andrew13/cabinet": "dev-master",
-        "escapework/laravelhelpers": "0.5.*"
+        "felixkiss/slug-routes": "dev-master"
 	},
     "require-dev": {
         "barryvdh/laravel-ide-helper": "dev-master",
-        "way/generators": "dev-master"
+        "way/generators": "dev-master",
+        "codeception/codeception": "dev-master"
     },
 	"autoload": {
 		"classmap": [
