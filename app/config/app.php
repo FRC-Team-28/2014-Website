@@ -105,6 +105,7 @@ return array(
         'Way\Generators\GeneratorsServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Andrew13\Cabinet\CabinetServiceProvider',
+        'Bllim\Datatables\DatatablesServiceProvider'
     ),
     /*
       |--------------------------------------------------------------------------
@@ -165,6 +166,7 @@ return array(
         'Validator'   => 'Illuminate\Support\Facades\Validator',
         'View'        => 'Illuminate\Support\Facades\View',
         'Sentry'      => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-        'Cabinet'     => 'Andrew13\Cabinet\CabinetFacade'
+        'Cabinet'     => 'Andrew13\Cabinet\CabinetFacade',
+        'Datatables'  => 'Bllim\Datatables\Datatables'
     ),
 );
