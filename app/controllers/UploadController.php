@@ -1,13 +1,4 @@
 <?php
-/*
-|--------------------------------------------------------------------------
-| Cabinet Controller Template
-|--------------------------------------------------------------------------
-|
-| This is the default Cabinet controller template for controlling uploads.
-| Feel free to change to your needs.
-|
-*/
 
 class UploadController extends BaseController {
 
