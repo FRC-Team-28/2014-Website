@@ -11,6 +11,7 @@ class SentryUserSeeder extends Seeder {
         DB::table('users')->delete();
 
         $user = array(
+            'id'         => '1',
             'first_name' => 'Site',
             'last_name'  => 'GlobalAdmin',
             'email'      => 'globaladmin@example.com',
@@ -20,6 +21,7 @@ class SentryUserSeeder extends Seeder {
         Sentry::getUserProvider()->create($user);
 
         $user = array(
+            'id'         => '2',
             'first_name' => 'Site',
             'last_name'  => 'Admin',
             'email'      => 'admin@example.com',
@@ -29,6 +31,7 @@ class SentryUserSeeder extends Seeder {
         Sentry::getUserProvider()->create($user);
 
         $user = array(
+            'id'         => '3',
             'first_name' => 'Site',
             'last_name'  => 'Editor',
             'email'      => 'editor@example.com',

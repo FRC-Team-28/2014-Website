@@ -11,12 +11,12 @@ class Article extends Eloquent implements SluggableInterface
 
 	public function author()
 	{
-		$this->belongsTo('User', 'author_id');
+		return $this->belongsTo('User', 'author_id');
 	}
 
 	public function setTitleAttribute($title)
 	{
-		$this->attributes['title'] = $title;
+		return $this->attributes['title'] = $title;
 	}
 
 	protected function generateSlug()

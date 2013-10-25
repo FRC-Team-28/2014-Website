@@ -1,6 +1,6 @@
 <?php
 
-class User extends Eloquent implements
+class User extends Eloquent
 {
 
 	protected $table = 'users';
@@ -9,6 +9,6 @@ class User extends Eloquent implements
 
 	public function articles()
 	{
-		$this->hasMany('Article');
+		return $this->hasMany('Article');
 	}
 }
