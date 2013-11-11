@@ -1,9 +1,10 @@
+/.idea
 /bootstrap/compiled.php
-/app/logs
 /vendor
-/public/assets/js/redactor/redactor.min.js
 tags
 composer.phar
 composer.lock
 _ide_helper.php
+*.log
 .DS_Store
+

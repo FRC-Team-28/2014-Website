@@ -2,16 +2,14 @@
 	"name": "laravel/laravel",
 	"description": "The Laravel Framework.",
 	"keywords": ["framework", "laravel"],
+	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.0.*",
-        "cartalyst/sentry": "dev-master",
-        "andrew13/cabinet": "dev-master",
-        "felixkiss/slug-routes": "dev-master"
+        "adamgoose/prismic-io": "dev-master"
 	},
     "require-dev": {
         "barryvdh/laravel-ide-helper": "dev-master",
-        "way/generators": "dev-master",
-        "codeception/codeception": "dev-master"
+        "barryvdh/laravel-vendor-cleanup": "dev-master"
     },
 	"autoload": {
 		"classmap": [
@@ -27,12 +25,11 @@
 		"post-install-cmd": [
 			"php artisan optimize"
 		],
-		"pre-update-cmd": [
-			"php artisan clear-compiled"
-		],
 		"post-update-cmd": [
+			"php artisan clear-compiled",
+            "php artisan vendor-cleanup",
             "php artisan ide-helper:generate",
-            "php artisan optimize"
+			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
 			"php artisan key:generate"

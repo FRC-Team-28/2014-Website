@@ -1,24 +1,24 @@
 @extends('site.templates.default')
 
 @section('title')
-  {{ $data['title'] }}
+
 @stop
 
 @section('content')
+@foreach($docs as $doc)
   <!-- blog entries -->
-  @foreach($data['articles'] as $article)
-  <h1><a href="#">{{ $article->title }}</a></h1>
-  <p class="lead">by <a href="index.html">{{ $article->author->first_name.' '.$article->author->last_name }}</a></p>
+  <h1>{{$doc->link()}}</h1>
+  <p class="lead">by <a href="index.html"></a></p>
   <hr>
   <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
   <hr>
   <img src="http://placehold.it/900x300" class="img-responsive">
   <hr>
-  <p>{{ $article->body }}</p>
+  <p></p>
   <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
   <hr>
-  @endforeach
+@endforeach
 
   <!-- pager -->
   <ul class="pager">

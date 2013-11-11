@@ -23,7 +23,7 @@ return array(
       | your application so that it is used when running Artisan tasks.
       |
      */
-    'url' => 'http://frcsite.dev',
+    'url' => 'http://frcteam28.dev',
     /*
       |--------------------------------------------------------------------------
       | Application Timezone
@@ -101,11 +101,8 @@ return array(
         'Illuminate\Validation\ValidationServiceProvider',
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
-        'Cartalyst\Sentry\SentryServiceProvider',
-        'Way\Generators\GeneratorsServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-        'Andrew13\Cabinet\CabinetServiceProvider',
-        'Bllim\Datatables\DatatablesServiceProvider'
+        'Barryvdh\VendorCleanup\VendorCleanupServiceProvider'
     ),
     /*
       |--------------------------------------------------------------------------
@@ -165,8 +162,6 @@ return array(
         'URL'         => 'Illuminate\Support\Facades\URL',
         'Validator'   => 'Illuminate\Support\Facades\Validator',
         'View'        => 'Illuminate\Support\Facades\View',
-        'Sentry'      => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-        'Cabinet'     => 'Andrew13\Cabinet\CabinetFacade',
-        'Datatables'  => 'Bllim\Datatables\Datatables'
+        'Prismic'     => 'Adamgoose\PrismicIo\Model'
     ),
 );
