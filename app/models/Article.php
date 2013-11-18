@@ -1,6 +1,6 @@
 <?php
 
-class Document extends Adamgoose\PrismicIo\Model
+class Article extends Adamgoose\PrismicIo\Model
 {
     protected $endpoint = 'https://frcteam28.prismic.io/api';
     public $collection = 'articles';
@@ -12,6 +12,6 @@ class Document extends Adamgoose\PrismicIo\Model
 
     public function author()
     {
-        return Author::at('author.id', $this->get('article.author')->asText());
+        return Author::at('document.id', $this->get('article.author')->asText())->first();
     }
 }

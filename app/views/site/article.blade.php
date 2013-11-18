@@ -7,11 +7,10 @@
 @section('content')
 <!-- blog entries -->
 <h1>{{$doc->link()}}</h1>
-<p class="lead">by {{$doc->author}}<a href="index.html"></a></p>
+<p class="lead">by {{$author->first_name. " ".$author->surname }}<a href="index.html"></a></p>
 <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
 <hr>
-<hr>
-<p></p>
+<p>{{$doc->getHtml('article.content')}}</p>
 
 
 
