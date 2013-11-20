@@ -33,9 +33,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Meet The Team</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Meet The Team</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
           <!-- <form class="navbar-form" role="search" action="search" method="POST">
             <div class="input-group col-md-4 navbar-right">

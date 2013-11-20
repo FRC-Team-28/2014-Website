@@ -61,6 +61,26 @@ Route::filter('guest', function()
 });
 
 /*
+ * Cache Filters
+ *
+ * These filters will get and put values to the cache on page requests.
+ *
+ */
+Route::filter('cache.get', function($route, $request)
+{
+    $cacheKey = md5($request->url());
+
+    if(Cache::has($cacheKey) && !Config::get('app.debug')) return Cache::get($cacheKey);
+});
+
+Route::filter('cache.put', function($route, $request, $response)
+{
+    $cacheKey = md5($request->url());
+
+    if( ! Cache::has($cacheKey)) Cache::put($cacheKey, $response->getContent(), 60);
+});
+
+/*
 |--------------------------------------------------------------------------
 | CSRF Protection Filter
 |--------------------------------------------------------------------------
