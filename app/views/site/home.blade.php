@@ -6,17 +6,18 @@
 
 @section('content')
 @foreach($docs as $doc)
+  <?php $author = $doc->author() ?>  
   <!-- blog entries -->
-  <h1>{{$doc->link()}}</h1>
-  <p class="lead">by <a href="index.html"></a></p>
+  <h2>{{$doc->link()}}</h1>
+  <?php foreach($doc->getTags() as $tag): ?>
+    {{ $tag }}
+  <?php endforeach; ?>
+  <p>by {{$author->first_name. " ".$author->surname }}<a href="index.html"></a></p>
   <hr>
   <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
   <hr>
-  <img src="http://placehold.it/900x300" class="img-responsive">
-  <hr>
-  <p></p>
-  <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
+  <p>{{Str::words($doc->getHtml('article.content'), 60, '...')}}  </p>
+  
   <hr>
 @endforeach
 

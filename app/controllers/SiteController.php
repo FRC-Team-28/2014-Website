@@ -8,7 +8,7 @@ class SiteController extends BaseController {
           ->with('docs', Article::get()->reverse());
     }
 
-    public function getAbout()
+    public function getAboutUs()
     {
       return View::make('site.about');
     }

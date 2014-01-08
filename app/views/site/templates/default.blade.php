@@ -6,7 +6,7 @@
     <meta name="description" content="Website for Team Mission Impossible, FRC Team 28">
     <meta name="author" content="FRC Team 28">
 
-    <title>FRC Team 28</title>
+    <title>@yield('title')</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -53,25 +53,9 @@
 
       <div class="row">
         <div class="col-lg-8">
-
+          
           @yield('content')
 
-        </div>
-
-        <div class="col-lg-4">
-          <div class="well">
-            <p>Placeholder!</p>
-          </div><!-- /well -->
-          <div class="well">
-            <h4>Popular Tags</h4>
-            <!-- We'll have some logic here to rank the most popular tags. Or wait, logic shouldn't be in
-                 the template. That should really be put in the HomeController somewhere.
-                 Maybe a rankTags function? -->
-          </div><!-- /well -->
-          <div class="well">
-            <h4>Side Widget Well</h4>
-            <p>Bootstrap's default well's work great for side widgets! What is a widget anyways...?</p>
-          </div><!-- /well -->
         </div>
       </div>
 

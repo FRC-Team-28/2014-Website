@@ -12,7 +12,7 @@ return array(
       |
      */
 
-    'debug' => false,
+    'debug' => true,
     /*
       |--------------------------------------------------------------------------
       | Application URL
@@ -101,6 +101,7 @@ return array(
         'Illuminate\Validation\ValidationServiceProvider',
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
+        'Illuminate\Remote\RemoteServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Barryvdh\VendorCleanup\VendorCleanupServiceProvider'
     ),
@@ -133,7 +134,7 @@ return array(
         'Cache'       => 'Illuminate\Support\Facades\Cache',
         'ClassLoader' => 'Illuminate\Support\ClassLoader',
         'Config'      => 'Illuminate\Support\Facades\Config',
-        'Controller'  => 'Illuminate\Routing\Controllers\Controller',
+        'Controller'  => 'Illuminate\Routing\Controller',
         'Cookie'      => 'Illuminate\Support\Facades\Cookie',
         'Crypt'       => 'Illuminate\Support\Facades\Crypt',
         'DB'          => 'Illuminate\Support\Facades\DB',
@@ -158,6 +159,7 @@ return array(
         'Schema'      => 'Illuminate\Support\Facades\Schema',
         'Seeder'      => 'Illuminate\Database\Seeder',
         'Session'     => 'Illuminate\Support\Facades\Session',
+        'SSH'         => 'Illuminate\Support\Facades\SSH',
         'Str'         => 'Illuminate\Support\Str',
         'URL'         => 'Illuminate\Support\Facades\URL',
         'Validator'   => 'Illuminate\Support\Facades\Validator',

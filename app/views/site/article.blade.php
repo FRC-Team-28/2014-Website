@@ -1,7 +1,7 @@
 @extends('site.templates.default')
 
 @section('title')
-
+{{ $doc->title }}
 @stop
 
 @section('content')
