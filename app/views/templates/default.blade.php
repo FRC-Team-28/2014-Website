@@ -37,7 +37,7 @@
                 <div class="uk-grid" data-uk-grid-margin>
                     
                     
-                    <div class="tm-main uk-width-9-10 uk-push-1-10">
+                    <div class="tm-main uk-width-8-10 uk-push-1-10">
                     @yield('content')
                     </div>
 

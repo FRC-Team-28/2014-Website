@@ -23,7 +23,7 @@ return array(
       | your application so that it is used when running Artisan tasks.
       |
      */
-    'url' => 'http://frcteam28.dev',
+    'url' => 'http://frcteam28.local',
     /*
       |--------------------------------------------------------------------------
       | Application Timezone
@@ -103,7 +103,8 @@ return array(
         'Illuminate\Workbench\WorkbenchServiceProvider',
         'Illuminate\Remote\RemoteServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-        'Barryvdh\VendorCleanup\VendorCleanupServiceProvider'
+        'Barryvdh\VendorCleanup\VendorCleanupServiceProvider',
+        'Greggilbert\Recaptcha\RecaptchaServiceProvider'
     ),
     /*
       |--------------------------------------------------------------------------

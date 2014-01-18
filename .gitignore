@@ -2,6 +2,7 @@
 /bootstrap/compiled.php
 /vendor
 /app/storage/*
+/app/config/mail.php
 tags
 composer.phar
 composer.lock

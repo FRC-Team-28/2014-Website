@@ -17,7 +17,7 @@
       <?php endforeach; ?>
     </ul>
 
-  {{$doc->getHtml('article.content')}} 
+  <p>{{$doc->getText('article.content')}}</p>
 
 </article>
 @stop

@@ -47,7 +47,7 @@ return array(
 	|--------------------------------------------------------------------------
 	| Global "From" Address
 	|--------------------------------------------------------------------------
-	|
+	|	
 	| You may wish for all e-mails sent by your application to be sent from
 	| the same address. Here, you may specify a name and address that is
 	| used globally for all e-mails that are sent by your application.
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => null,
+	'username' => "postmaster@sandbox78021.mailgun.org",
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => null,
+	'password' => "4z-yh-fsz318",
 
 	/*
 	|--------------------------------------------------------------------------
@@ -119,6 +119,6 @@ return array(
 	|
 	*/
 
-	'pretend' => false,
+	'pretend' => true,
 
 );

@@ -17,10 +17,11 @@ Blog
       <?php endforeach; ?>
     </ul>
   </p>
-  {{Str::words($doc->getHtml('article.content'), 60, '...')}} 
+  {{Str::words($doc->getText('article.content'), 80, '...')}} 
   <hr class="uk-article-divider">
 @endforeach
 
+ <?php $paginator = Paginator::make((array) $docs, count($docs), 5); ?>
 @stop
 
 

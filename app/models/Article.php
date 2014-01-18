@@ -12,6 +12,6 @@ class Article extends Adamgoose\PrismicIo\Model
 
     public function author()
     {
-        return Author::at('document.id', $this->get('article.author')->asText())->first();
+        return Author::find($this->getText('article.author'));
     }
 }
