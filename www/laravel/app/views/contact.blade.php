@@ -20,13 +20,13 @@ Contact
 {{ Form::open(array('url' => 'contact-us', 'method' => 'POST', 'class' => 'uk-form'))}}
   <fieldset>
     <legend style="width: 150px">Get In Touch</legend>
-    
+
     <div class="uk-grid">
       <div class="uk-form-row uk-form-icon uk-width-1-4">
         <i class="uk-icon-user"></i>
         <input type="text" placeholder="Full Name" value="{{ Input::old('name') }}" name="name"
         class="uk-width-1-1 @if(!empty($errors->first('name'))) uk-form-danger @endif">
-      </div>     
+      </div>
     </div>
 
     <br />
@@ -35,7 +35,7 @@ Contact
         <i class="uk-icon-envelope"></i>
         <input type="text" placeholder="Email Address" value="{{ Input::old('email') }}" name="email"
         class="uk-width-1-1 @if(!empty($errors->first('email'))) uk-form-danger @endif">
-      </div>     
+      </div>
     </div>
 
     <br />
@@ -45,7 +45,7 @@ Contact
         <i class="uk-icon-edit"></i>
         <input type="text" placeholder="Email Subject" value="{{ Input::old('subject') }}" name="subject"
         class="uk-width-1-1 @if(!empty($errors->first('subject'))) uk-form-danger @endif">
-      </div>     
+      </div>
     </div>
 
     <br />
@@ -68,12 +68,6 @@ Contact
   </fieldset>
 {{ Form::close() }}
 
-<?php
-
-  if(isset($input)) {
-    var_dump($input);
-  }
-?>
 @stop
 
 
