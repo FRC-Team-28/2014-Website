@@ -1,0 +1,12 @@
+/.idea
+/bootstrap/compiled.php
+/vendor
+/app/storage/*
+/app/config/mail.php
+tags
+composer.phar
+composer.lock
+_ide_helper.php
+*.log
+.DS_Store
+

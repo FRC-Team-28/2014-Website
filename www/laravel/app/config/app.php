@@ -23,7 +23,7 @@ return array(
       | your application so that it is used when running Artisan tasks.
       |
      */
-    'url' => 'http://frcteam28.local',
+    'url' => 'http://frcsite.dev',
     /*
       |--------------------------------------------------------------------------
       | Application Timezone
